@@ -241,7 +241,7 @@ struct ContentView2: View {
                             .bold()
                             .italic()
                             .foregroundColor(.white)
-                            .font(.title2)
+                            .font(.title1)
                             .padding(.all, 5.0)
                             .background(Color(red: 0.016, green: 0.512, blue: 0.241))
                             .cornerRadius(5.0)
