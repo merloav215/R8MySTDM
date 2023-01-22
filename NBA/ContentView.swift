@@ -36,7 +36,7 @@ struct ContentView: View {
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 5.0)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 5.0)
                         .bold()
                         .background(.white)
                         .cornerRadius(5.0)
@@ -138,7 +138,7 @@ struct ContentView: View {
                 
                 HStack{
                     Button(action: buttonPressed){
-                        Text("Review!")
+                        Text("R8")
                             .foregroundColor(.white)
                             .font(.body)
                             .bold()
@@ -178,7 +178,7 @@ struct ContentView: View {
                     .buttonStyle(.borderedProminent)
                     Spacer()
                     Button(action: buttonPressed){
-                        Image(systemName: "ticket.fill")
+                        Image(systemName: "person.crop.circle.fill")
                             .foregroundColor(.white)
                             .font(.title)
                             .contentShape(Rectangle())
@@ -228,7 +228,7 @@ struct ContentView2: View {
                             .foregroundColor(.black)
                             .multilineTextAlignment(.center)
                             .padding(.vertical, 5.0)
-                            .padding(.horizontal)
+                            .padding(.horizontal, 5.0)
                             .bold()
                             .background(.white)
                             .cornerRadius(5.0)
@@ -638,7 +638,7 @@ struct ContentView2: View {
                 Group{
                     HStack{
                         Button(action: buttonPressed){
-                            Text("Review!")
+                            Text("R8")
                                 .foregroundColor(.white)
                                 .font(.body)
                                 .bold()
@@ -678,7 +678,7 @@ struct ContentView2: View {
                         .buttonStyle(.borderedProminent)
                         Spacer()
                         Button(action: buttonPressed){
-                            Image(systemName: "ticket.fill")
+                            Image(systemName: "person.crop.circle.fill")
                                 .foregroundColor(.white)
                                 .font(.title)
                                 .contentShape(Rectangle())
@@ -690,6 +690,7 @@ struct ContentView2: View {
                     .padding(.horizontal, 25.0)
                     .padding(.top,2.0)
                 }
+                .padding(.horizontal, 5.0)
             }
         }
     }
@@ -727,7 +728,7 @@ struct ContentView3: View {
                             .foregroundColor(.black)
                             .multilineTextAlignment(.center)
                             .padding(.vertical, 5.0)
-                            .padding(.horizontal)
+                            .padding(.horizontal, 5.0)
                             .bold()
                             .background(.white)
                             .cornerRadius(5.0)
@@ -1226,6 +1227,7 @@ struct ContentView3: View {
                 //
                 // - I need to make the headers and footers sticky so you can slide the middle portion...
                 //
+                // - Apply to all pages ASAP...
                 //- Comment out Spacer in 2 in ContentView 3 when done
                 
                 Group{
@@ -1240,7 +1242,7 @@ struct ContentView3: View {
                 Group{
                     HStack{
                         Button(action: buttonPressed){
-                            Text("Review!")
+                            Text("R8")
                                 .foregroundColor(.white)
                                 .font(.body)
                                 .bold()
@@ -1280,7 +1282,249 @@ struct ContentView3: View {
                         .buttonStyle(.borderedProminent)
                         Spacer()
                         Button(action: buttonPressed){
-                            Image(systemName: "ticket.fill")
+                            Image(systemName: "person.crop.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                    }
+                    .padding(.horizontal, 25.0)
+                    .padding(.top,2.0)
+                }
+                .padding(.horizontal, 5.0)
+            }
+        }
+    }
+}
+
+struct ContentView4: View {
+    
+    func buttonPressed(){
+        print("Button Pressed!")
+    }
+    
+    var body: some View {
+        ZStack{
+            Color.black.ignoresSafeArea()
+            VStack(spacing: 5.0){
+                Group{
+                    HStack{
+                        Button(action: buttonPressed){
+                            Image(systemName: "arrowshape.turn.up.backward.2.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.footnote)
+                                .padding(.horizontal, 10.0)
+                                .padding(.vertical, 5.0)
+                                .frame(width: 50, height: 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        .padding(.leading, 10.0)
+                        
+                        Spacer()
+                        
+                        Text("R8MySTDM")
+                            .font(.title)
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                            .padding(.vertical, 5.0)
+                            .padding(.horizontal, 5.0)
+                            .bold()
+                            .background(.white)
+                            .cornerRadius(5.0)
+                        
+                        Spacer()
+                        
+                        Button(action: buttonPressed) {
+                            Text("Hello!")
+                                .fontWeight(.semibold)
+                                .italic()
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                                .font(.footnote)
+                                .frame(width: 50.0, height: 20)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        .padding(.trailing, 10.0)
+                    }
+                    .padding(.horizontal, 20.0)
+                    Group{
+                        ZStack{
+                            Color.white
+                                .frame(width: 400.0, height: 5.0)
+                        }
+                        //Spacer 1
+                        Spacer()
+                    }
+                }
+                .padding(.horizontal, 5.0)
+                Group{
+                    ZStack{
+                        Color.white.ignoresSafeArea()
+                        VStack{
+                            Spacer()
+                            Group{
+                                Group{
+                                    VStack{
+                                        Text("theave5's Profile -")
+                                            .multilineTextAlignment(.leading)
+                                            .underline()
+                                            .bold()
+                                            .foregroundColor(.white)
+                                            .padding(.horizontal, 50.0)
+                                            .padding(.vertical, 20.0)
+                                            .background(.black)
+                                            .cornerRadius(25.0)
+                                        ZStack{
+                                            Color.black
+                                                .frame(width: 400.0, height: 5.0)
+                                        }
+                                        .padding(.vertical, 2.5)
+                                    }
+                                }
+                            }
+                            HStack(){
+                                Spacer()
+                                Image("ProfilePic")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .font(.title)
+                                    .padding(.all, 5.0)
+                                    .frame(width: 150.0, height: 150.0)
+                                Spacer()
+                                VStack(alignment: .leading){
+                                    Text("Avery")
+                                        .multilineTextAlignment(.leading)
+                                        .italic()
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                        .padding(.top, 5.0)
+                                    Text("Merlo")
+                                        .font(.headline)
+                                        .multilineTextAlignment(.leading)
+                                        .italic()
+                                        .foregroundColor(.white)
+                                        .padding(.bottom, 5.0)
+                                }
+                                .padding(.horizontal, 50.0)
+                                .padding(.vertical, 20.0)
+                                .background(.black)
+                                .cornerRadius(25.0)
+                                .frame(width: 150.0, height: 150)
+                                Spacer()
+                            }
+                            Group{
+                                ZStack{
+                                    Color.black
+                                        .frame(width: 400.0, height: 5.0)
+                                }
+                                .padding(.vertical, 2.5)
+                            }
+                            
+                            HStack(alignment: .center){
+                                Spacer()
+                                VStack{
+                                    Text("Hometown:")
+                                        .multilineTextAlignment(.center)
+                                        .underline()
+                                        .bold()
+                                        .padding(.bottom, 2.5)
+                                        .foregroundColor(.white)
+                                    Text("Baltimore, MD")
+                                        .multilineTextAlignment(.center)
+                                        .padding(.top, 2.5)
+                                        .foregroundColor(.white)
+                                }
+                                .padding(.horizontal, 5.0)
+                                .frame(width: 150, height: 100.0)
+                                .background(.black)
+                                .cornerRadius(25.0)
+                                Spacer()
+                                VStack{
+                                    Text("Member Since:")
+                                        .multilineTextAlignment(.center)
+                                        .underline()
+                                        .bold()
+                                        .padding(.bottom, 2.5)
+                                        .foregroundColor(.white)
+                                    Text("Jan. 2023")
+                                        .multilineTextAlignment(.center)
+                                        .padding(.top, 2.5)
+                                        .foregroundColor(.white)
+                                }
+                                .padding(.horizontal, 5.0)
+                                .frame(width: 150, height: 100.0)
+                                .background(.black)
+                                .cornerRadius(25.0)
+                                Spacer()
+                            }
+                            Spacer()
+                        }
+                    }
+                }
+                
+                Group{
+                    Spacer()
+                    Text("hello")
+                }
+                
+                Group{
+                    //Spacer 2
+                    Spacer()
+                    ZStack{
+                        Color.white
+                            .frame(width: 400.0, height: 5.0)
+                    }
+                }
+                Group{
+                    HStack{
+                        Button(action: buttonPressed){
+                            Text("R8")
+                                .foregroundColor(.white)
+                                .font(.body)
+                                .bold()
+                                .frame(width: 100.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "house.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "fork.knife.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "wineglass.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "person.crop.circle.fill")
                                 .foregroundColor(.white)
                                 .font(.title)
                                 .contentShape(Rectangle())
@@ -1302,7 +1546,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         //ContentView()
         //ContentView2()
-        ContentView3()
+        //ContentView3()
+        ContentView4()
     }
 }
 
