@@ -188,6 +188,9 @@ struct ContentView2: View {
     }
     
     var body: some View {
+        Group{
+            
+        }
         ZStack {
             Color(.black).ignoresSafeArea()
             VStack(spacing: 6.0) {
@@ -241,7 +244,7 @@ struct ContentView2: View {
                             .bold()
                             .italic()
                             .foregroundColor(.white)
-                            .font(.title1)
+                            .font(.title2)
                             .padding(.all, 5.0)
                             .background(Color(red: 0.016, green: 0.512, blue: 0.241))
                             .cornerRadius(5.0)
@@ -255,8 +258,9 @@ struct ContentView2: View {
                             .background(Color(red: 0.016, green: 0.512, blue: 0.241))
                             .cornerRadius(5.0)
                     }
-                    .padding(.bottom, 10.0)
                     .multilineTextAlignment(.leading)
+                    
+                    Spacer()
                     
                     Group{
                         HStack{
