@@ -256,7 +256,7 @@ struct ContentView2: View {
                                 .frame(width: 400.0, height: 5.0)
                         }
                         //Spacer 1
-                        //Spacer()
+                        Spacer()
                     }
                     
                     Group{
@@ -628,7 +628,7 @@ struct ContentView2: View {
                 
                 Group{
                     //Spacer 2
-                    Spacer()
+                    //Spacer()
                     ZStack{
                         Color.white
                             .frame(width: 400.0, height: 5.0)
@@ -704,8 +704,7 @@ struct ContentView3: View {
     var body: some View {
         ZStack{
             Color.black.ignoresSafeArea()
-            VStack{
-                
+            VStack(spacing: 5.0){
                 Group{
                     HStack{
                         Button(action: buttonPressed){
@@ -749,19 +748,17 @@ struct ContentView3: View {
                         .padding(.trailing, 10.0)
                     }
                     .padding(.horizontal, 20.0)
-                }
-                
-                Group{
-                    ZStack{
-                        Color.white
-                            .frame(width: 400.0, height: 5.0)
+                    Group{
+                        ZStack{
+                            Color.white
+                                .frame(width: 400.0, height: 5.0)
+                        }
+                        //Spacer 1
+                        Spacer()
                     }
-                    //Spacer 1
-                    Spacer()
                 }
-                
+                .padding(.horizontal, 5.0)
                 Group{
-                    
                     Text("Beer List @ TD Garden")
                         .bold()
                         .italic()
@@ -781,7 +778,7 @@ struct ContentView3: View {
                         .cornerRadius(5.0)
                     Group{
                         HStack{
-                            Text("Venues")
+                            Text("Beers ")
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
@@ -801,8 +798,435 @@ struct ContentView3: View {
                         }
                         .padding(.horizontal, 45.0)
                     }
-                    
+                    Group{
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                        HStack{
+                            Text("Fluffy IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
+                    Group{
+                        HStack{
+                            Text("Springdale IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
+                    Group{
+                        HStack{
+                            Text("Cloudcandy IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                        HStack{
+                            Text("Hoponius Union Lager")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
                 }
+                
+                Group{
+                    Group{
+                        HStack{
+                            Text("Don't Poke the Bear Ale")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                        HStack{
+                            Text("Whirlpool Pale Ale")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
+                    Group{
+                        HStack{
+                            Text("Juicer IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                        HStack{
+                            Text("Banner City Light Lager")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
+                    Group{
+                        HStack{
+                            Text("Goose IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                        HStack{
+                            Text("Hazy Wonder IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
+                    Group{
+                        HStack{
+                            Text("Molson Canadian")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                        HStack{
+                            Text("Wicked Easy IPA")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
+                            }
+                            .frame(width: 400.0, height: 1.0)
+                        }
+                    }
+                }
+                
+                Group{
+                    HStack{
+                        Spacer()
+                        Text("more coming soon...")
+                            .foregroundColor(.white)
+                            .font(.caption)
+                            .padding(.all, 5.0)
+                            .padding(.horizontal, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
+                            .padding(.horizontal, 25.0)
+                    }
+                }
+                    
+                
+                // PROBLEM:
+                //
+                // - I need to make the headers and footers sticky so you can slide the middle portion...
+                //
+                //- Comment out Spacer in 2 in ContentView 3 when done
                 
                 Group{
                     //Spacer 2
@@ -868,6 +1292,7 @@ struct ContentView3: View {
                     .padding(.horizontal, 25.0)
                     .padding(.top,2.0)
                 }
+                .padding(.horizontal, 5.0)
             }
         }
     }
@@ -875,8 +1300,8 @@ struct ContentView3: View {
     
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-        ContentView2()
+        //ContentView()
+        //ContentView2()
         ContentView3()
     }
 }
