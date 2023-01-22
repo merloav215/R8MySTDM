@@ -17,12 +17,6 @@ struct ContentView: View {
         ZStack {
             Color(.black).ignoresSafeArea()
             VStack(alignment: .center, spacing: 10.0) {
-                HStack{
-                    ZStack{
-                        Color(.white)
-                    }
-                    .frame(width: 400.0, height: 25.0)
-                }
         
                 HStack{
                     Button(action: buttonPressed){
@@ -32,12 +26,13 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .frame(width: 50.0, height: 20)
                     }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
                     .buttonStyle(.borderedProminent)
                     
                     Spacer()
                     
                     Text("R8MySTDM")
-                        .font(.title2)
+                        .font(.title)
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 5.0)
@@ -50,31 +45,28 @@ struct ContentView: View {
                     
                     Button(action: buttonPressed) {
                         Text("Log in")
-                            .fontWeight(.light)
+                            .fontWeight(.semibold)
                             .italic()
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .font(.footnote)
                             .frame(width: 50.0, height: 20)
                     }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
                     .buttonStyle(.borderedProminent)
                 }
-                .padding(.top, 10.0)
                 .padding(.horizontal, 20.0)
-                .padding(.bottom, 5.0)
+               
+                Spacer()
                 
-                ZStack{
-                    Color(red: 0.016, green: 0.512, blue: 0.241)
-                    Image("Boston-Celtics")
-                        .resizable()
-                        .frame(width: 300.0, height: 300.0)
-                        .aspectRatio(contentMode: .fit)
-                        .background(.white)
-                        .cornerRadius(50)
-                        .padding([.leading, .bottom, .trailing], 5.0)
-                }
-                .cornerRadius(50.0)
-                .padding(.bottom, 5.0)
+                Image("Boston-Celtics")
+                    .resizable()
+                    .frame(width: 350, height: 350)
+                    .background(.white)
+                    .cornerRadius(50)
+                    .padding(.all, 5.0)
+                
+                Spacer()
                 
                 HStack{
                     ZStack{
@@ -83,7 +75,6 @@ struct ContentView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .underline()
                     }
                     .frame(width: 200.0, height: 50.0)
                     .cornerRadius(25)
@@ -131,14 +122,27 @@ struct ContentView: View {
                     .padding(.top, 5.0)
                     .cornerRadius(20.0)
                 
+                Spacer()
+                
                 HStack{
                     Button(action: buttonPressed){
-                        Text("Leave a review...")
+                        Text("Review!")
                             .foregroundColor(.white)
                             .font(.body)
                             .bold()
-                            
+                            .frame(width: 100.0, height: 30.0)
                     }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                    .buttonStyle(.borderedProminent)
+                    Spacer()
+                    Button(action: buttonPressed){
+                        Image(systemName: "house.fill")
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .contentShape(Rectangle())
+                            .frame(width: 30.0, height: 30.0)
+                    }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
                     .buttonStyle(.borderedProminent)
                     Spacer()
                     Button(action: buttonPressed){
@@ -146,29 +150,32 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .font(.title)
                             .contentShape(Rectangle())
+                            .frame(width: 30.0, height: 30.0)
                     }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                    .buttonStyle(.borderedProminent)
+                    Spacer()
                     Button(action: buttonPressed){
                         Image(systemName: "wineglass.fill")
                             .foregroundColor(.white)
                             .font(.title)
                             .contentShape(Rectangle())
+                            .frame(width: 30.0, height: 30.0)
                     }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                    .buttonStyle(.borderedProminent)
+                    Spacer()
                     Button(action: buttonPressed){
                         Image(systemName: "ticket.fill")
                             .foregroundColor(.white)
                             .font(.title)
                             .contentShape(Rectangle())
+                            .frame(width: 30.0, height: 30.0)
                     }
+                    .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                    .buttonStyle(.borderedProminent)
                 }
-                .padding(.horizontal)
-                .padding(.bottom, 10.0)
-                .padding(.top, 5.0)
-                HStack{
-                    ZStack{
-                        Color(.white)
-                    }
-                    .frame(width: 400.0, height: 25.0)
-                }
+                .padding(.horizontal, 20.0)
             }
         }
     }
@@ -195,12 +202,13 @@ struct ContentView2: View {
                                 .frame(width: 50, height: 20)
                                 .multilineTextAlignment(.center)
                         }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
                         .buttonStyle(.borderedProminent)
                         .padding(.leading, 10.0)
                         Spacer()
                         
                         Text("R8MySTDM")
-                            .font(.title2)
+                            .font(.title)
                             .foregroundColor(.black)
                             .multilineTextAlignment(.center)
                             .padding(.vertical, 5.0)
@@ -213,30 +221,31 @@ struct ContentView2: View {
                         
                         Button(action: buttonPressed) {
                             Text("Log in")
-                                .fontWeight(.light)
-                                
+                                .fontWeight(.semibold)
                                 .italic()
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .font(.footnote)
                                 .frame(width: 50.0, height: 20)
                         }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
                         .buttonStyle(.borderedProminent)
                         .padding(.trailing, 10.0)
                     }
                     .padding(.horizontal, 20.0)
-                    .padding(.vertical, 10.0)
+                    
+                    Spacer()
                     
                     Group{
                         Text("Food @ TD Garden")
                             .bold()
                             .italic()
                             .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
                             .font(.title2)
                             .padding(.all, 5.0)
                             .background(Color(red: 0.016, green: 0.512, blue: 0.241))
                             .cornerRadius(5.0)
+                            .multilineTextAlignment(.leading)
                         Text("**subject to change*")
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
@@ -246,38 +255,44 @@ struct ContentView2: View {
                             .background(Color(red: 0.016, green: 0.512, blue: 0.241))
                             .cornerRadius(5.0)
                     }
-                    .padding(.bottom, 5.0)
-                    HStack{
-                        ZStack{
-                            Color.white.ignoresSafeArea()
-                        }
-                        .frame(width: 400.0, height: 1.0)
-                    }
-                    HStack{
-                        Text("Lucky's Chicken")
-                            .foregroundColor(.white)
-                            .font(.headline)
-                            .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
-                        Spacer()
-                        Spacer()
-                        VStack{
-                            HStack{
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.yellow)
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.yellow)
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.yellow)
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.yellow)
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.yellow)
+                    .padding(.bottom, 10.0)
+                    .multilineTextAlignment(.leading)
+                    
+                    Group{
+                        HStack{
+                            ZStack{
+                                Color.white.ignoresSafeArea()
                             }
-                            .padding(.trailing, 25.0)
+                            .frame(width: 400.0, height: 1.0)
                         }
+                        HStack{
+                            Text("Lucky's Chicken")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .multilineTextAlignment(.leading)
+                                .padding(.all, 5.0)
+                                .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                                .cornerRadius(5.0)
+                            Spacer()
+                            Spacer()
+                            VStack{
+                                HStack{
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.yellow)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 25.0)
                     }
+                    
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -289,8 +304,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -305,8 +321,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.yellow)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -318,8 +334,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -334,8 +351,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -350,8 +367,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -366,8 +384,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -379,8 +397,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -395,8 +414,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -408,8 +427,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -424,8 +444,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -437,8 +457,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -453,8 +474,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -466,8 +487,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -482,8 +504,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -498,8 +520,9 @@ struct ContentView2: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 25.0)
-                            .padding([.top, .bottom, .trailing], 5.0)
+                            .padding(.all, 5.0)
+                            .background(Color(red: 0.016, green: 0.512, blue: 0.241))
+                            .cornerRadius(5.0)
                         Spacer()
                         Spacer()
                         HStack{
@@ -514,8 +537,8 @@ struct ContentView2: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                         }
-                        .padding(.trailing, 25.0)
                     }
+                    .padding(.horizontal, 25.0)
                     HStack{
                         ZStack{
                             Color.white.ignoresSafeArea()
@@ -524,6 +547,7 @@ struct ContentView2: View {
                     }
                 }
                 .bold()
+                
                 Group{
                     HStack{
                         Image("TDGarden1")
@@ -556,14 +580,63 @@ struct ContentView2: View {
                     }
                     .padding(.all, 5.0)
                 }
-                .bold()
-                Button(action: buttonPressed){
-                    Text("Beer Menu")
-                        .bold()
-                        .italic()
-                        .frame(width: 100.0, height: 40)
+                
+                Spacer()
+                
+                Group{
+                    HStack{
+                        Button(action: buttonPressed){
+                            Text("Review!")
+                                .foregroundColor(.white)
+                                .font(.body)
+                                .bold()
+                                .frame(width: 100.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "house.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "fork.knife.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "wineglass.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                        Spacer()
+                        Button(action: buttonPressed){
+                            Image(systemName: "ticket.fill")
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .contentShape(Rectangle())
+                                .frame(width: 30.0, height: 30.0)
+                        }
+                        .tint(Color(red: 0.016, green: 0.512, blue: 0.241))
+                        .buttonStyle(.borderedProminent)
+                    }
+                    .padding(.horizontal, 25.0)
                 }
-                .buttonStyle(.borderedProminent)
             }
         }
     }
