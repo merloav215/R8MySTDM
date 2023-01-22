@@ -1394,7 +1394,7 @@ struct ContentView4: View {
                                     .resizable()
                                     .scaledToFit()
                                     .font(.title)
-                                    .padding(.all, 5.0)
+                                    .padding(.all, 2.5)
                                     .frame(width: 150.0, height: 150.0)
                                 Spacer()
                                 VStack{
