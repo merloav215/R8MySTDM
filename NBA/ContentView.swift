@@ -1397,7 +1397,7 @@ struct ContentView4: View {
                                     .padding(.all, 5.0)
                                     .frame(width: 150.0, height: 150.0)
                                 Spacer()
-                                VStack(alignment: .leading){
+                                VStack{
                                     Text("Avery")
                                         .multilineTextAlignment(.leading)
                                         .italic()
